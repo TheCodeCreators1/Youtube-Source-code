@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;900&display=swap');
+body {
+     background: url(SL-042221-42420-09.jpg);
+     background-size: cover;
+   
+}
+.widget {
+     position: fixed;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     width: 300px;
+     height: 300px;
+     padding: 20px;
+     background: #FFFEFF;
+     border-radius: 20px;
+     box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.2);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+.temp {
+     font-family: 'Roboto', sans-serif;
+     font-size: 88px;
+     font-weight: 900;
+     margin-left: 22px;
+}
+.city {
+     font-family: 'Poppins', sans-serif;
+     font-size: 115%;
+     font-weight: 500;
+     margin-left: -10px;
+}
+.loader {
+     width: 48px;
+     height: 48px;
+     border: 5px solid #000;
+     border-bottom-color: transparent;
+     border-radius: 50%;
+     display: inline-block;
+     box-sizing: border-box;
+     animation: rotation 1s linear infinite;
+}
+ @keyframes rotation {
+     0% {
+         transform: rotate(0deg);
+    }
+     100% {
+         transform: rotate(360deg);
+    }
+}
+.toggle {
+     display: none;
+     cursor: pointer;
+     -webkit-tap-highlight-color: transparent;
+     margin: -25px 0px 25px 0px;
+}
+.toggle i {
+     position: relative;
+     display: flex;
+     margin-right: .5rem;
+     width: 57.5px;
+     height: 32.5px;
+     background-color: #F2F1F2;
+     border-radius: 23px;
+     vertical-align: text-bottom;
+     transition: all 0.3s linear;
+     z-index: 1;
+     font-family: 'Poppins', sans-serif;
+     font-style: normal;
+     font-size: 12px;
+     justify-content: space-around;
+}
+.toggle i p {
+     display: inherit;
+     margin: 7px 0 0 0;
+}
+.toggle i::before {
+     content: "";
+     position: absolute;
+     left: 0;
+     width: 52.5px;
+     height: 32.5px;
+     border-radius: 11px;
+     transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+     transition: all 0.25s linear;
+}
+.toggle i::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     width: 27.5px;
+     height: 27.5px;
+     background-color: #fff;
+     border-radius: 13.75px;
+     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+     transform: translate3d(2px, 2px, 0);
+     transition: all 0.2s ease-in-out;
+     z-index: -1;
+}
+.toggle:active i::after {
+     width: 35px;
+     transform: translate3d(2.5px, 2.5px, 0);
+}
+.toggle:active input:checked + i::after {
+     transform: translate3d(20px, 2.5px, 0);
+}
+.toggle input {
+     display: none;
+}
+.toggle input:checked + i {
+     background-color: #F2F1F2;
+}
+.toggle input:checked + i::before {
+     transform: translate3d(22.5px, 2.5px, 0) scale3d(0, 0, 0);
+}
+.toggle input:checked + i::after {
+     transform: translate3d(27.5px, 2.5px, 0);
+}
