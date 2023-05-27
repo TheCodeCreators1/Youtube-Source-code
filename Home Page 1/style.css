@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background-image: url(Wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.navbar {
+    width: 95%;
+    height: auto;
+    margin-left: 30px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Poppins',sans-serif;
+    float: left;
+    font-weight: 600;
+    padding-top: .6%;
+    cursor: pointer;
+}
+
+.menu {
+    width: 600px;
+    float: left;
+    height: 70px;
+}
+ul {
+    float: left;
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14%;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 60px;
+    font-size: 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: .3S ease;
+}
+
+ul li a:hover {
+    color: #ff0000;
+}
+.search-box {
+    float: right;
+    width: 240px;
+    background: #fff;
+    height: 30px;
+    padding: 8px;
+    border-radius: 15px;
+    margin-top:1% ;
+    margin-right: 2%;
+}
+
+.search-box .search-txt {
+    width: 190px;
+    padding: 0 6px;
+}
+
+.search-btn {
+    text-decoration: none;
+    background: #fff;
+    color: #000;
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    color: #000;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: .6px;
+}
+
+
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1 {
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+    font-size: 85px;
+}
+
+
+.button {
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn {
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    transition: .3s ease;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
