@@ -1,0 +1,4 @@
+<svg class="circle-middle" viewBox="0 0 60 60">
+    <circle class="back" cx="30" cy="30" r="27"></circle>
+    <circle class="front" cx="30" cy="30" r="27"></circle>
+  </svg>
